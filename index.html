@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!-- 
+    <html lang="en"> 向搜索引擎表示该页面是html语言，并且语言为英文网站
+    改为 <html lang="zh"> zh即表示中文 -->
+<html lang="ZH">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/app.css" />
+  <link rel="stylesheet" href="./css/animate.css" />
+  <title>Bootstrap项目</title>
+</head>
+
+<body>
+  <!--    导航    -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- container-fluid:自适应屏幕宽度，即满屏显示。 -->
+      <!-- 小屏幕导航按钮和logo-->
+      <div class="navbar-header">
+        <!-- .navbar-toggle——设置button元素为导航条组件的切换钮； -->
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <!-- 表示右侧的线条 -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- .navbar-brand——设置导航条组件内的品牌图标； -->
+        <a href="index.html" class="navbar-brand">hello bootstrap</a>
+      </div>
+      <!--小屏幕导航按钮和logo-->
+
+      <!--大屏幕导航-->
+      <!-- .navbar-collapse——设置div元素为导航条组件各列表项的父元素； -->
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home">首页</a></li>
+          <li><a href="#bbs">论坛</a></li>
+          <li><a href="#html">前端开发</a></li>
+          <li><a href="#tech">热门技术</a></li>
+          <li><a href="#chart">chart.js</a></li>
+          <li><a href="#contact">联系我们</a></li>
+        </ul>
+      </div>
+      <!--    大屏幕导航-->
+    </div>
+  </nav>
+  <!--    导航    -->
+
+  <!--    home-->
+  <section id="home">
+    <!-- 滤镜层 -->
+    <div class="lj">
+      <div class="container">
+        <div class="row wow fadeInUp" data-wow-delay="1s" data-wow-duration="1s">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <!-- class="img-responsive"让图片自适应 -->
+            <!-- <img src="images/home/home-1.jpg" class="img-responsive" alt="BootStrap" /> -->
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="./images/home/home-1.jpg" alt="图片1" />
+                  <div class="carousel-caption">
+                    1111
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="./images/home/home-2.jpg" alt="图片2" />
+                  <div class="carousel-caption">
+                    2222
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="./images/home/home-1.jpg" alt="图片3" />
+                  <div class="carousel-caption">
+                    333
+                  </div>
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--home-->
+
+  <!--bbs-->
+  <section id="bbs">
+    <div class="container">
+      <div class="row wow fadeInUp" data-wow-duration="1s">
+        <div class="col-md-4">
+          <a href="https://cn.vuejs.org/" target="_blank">
+            <img class="img-responsive" src="images/bbs/vue.jpg" alt="" />
+            <!-- <h5 style="margin-top: 45px;">vue学习 </h5> -->
+            <h5>vue学习</h5>
+            <p>渐进式 JavaScript 框架</p>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="http://nodejs.cn/api/" target="_blank">
+            <img class="img-responsive" src="images/bbs/nodejs.jpg" alt="" />
+            <h5>Node.js学习</h5>
+            <p>是一个基于 Chrome V8 引擎的 JavaScript 运行时。</p>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="https://www.bootcss.com/" target="_blank">
+            <img class="img-responsive" src="images/bbs/bootstrap.jpg" alt="" />
+            <h5>bootstrap学习</h5>
+            <p>简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--bbs-->
+  <!--前端开发 html-->
+  <section id="html">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 wow fadeInLeft">
+          <h2>HTML5前端开发</h2>
+          <p>
+            一线工程师倾情打造！祝你完成普通程序员到优秀工程师的完美升级！
+          </p>
+          <p>
+            <span class="glyphicon glyphicon-grain icon1"></span>
+            使用HTML5和CSS3技术松松打造自适应。
+          </p>
+          <p>
+            <span class="glyphicon glyphicon-grain icon1"></span>
+            清晰明了的语义代码,更高的可读性,更利于页面维护。
+          </p>
+        </div>
+        <div class="col-md-6 wow fadeInRight">
+          <img style="width: 240px; height: 250px;" class="img-responsive" src="images/html/html5.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--前端开发html-->
+  <!--react-->
+  <section id="react">
+    <div class="container">
+      <div class="row">
+        <!-- bootstrap使用动画配合的两个库，wow.js    animate.css -->
+        <div class="col-md-6 wow fadeInLeft">
+          <img style="width: 240px; height: 250px;" class="img-responsive" src="images/html/react.jpg" alt="" />
+        </div>
+        <div class="col-md-6 wow fadeInRight">
+          <h2>React</h2>
+          <p>
+            用于构建用户界面的 JavaScript 库
+          </p>
+          <p>
+            <span class="glyphicon glyphicon-grain icon2"></span>React
+            使创建交互式 UI 变得轻而易举
+          </p>
+          <p>
+            <span class="glyphicon glyphicon-grain icon2"></span>创建拥有各自状态的组件，再由这些组件构成更加复杂的UI。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--react-->
+
+  <!--tech-->
+  <section id="tech">
+    <div class="container wow fadeIn" data-wow-delay="0.6s">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>热门技术</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 wow flipInX">
+          <div class="tech">
+            <img src="images/tech/sass.png" class="img-responsive" alt="" />
+            <a href="https://www.sass.hk/" target="_blank" class="btn btn-primary" role="button">开始学习</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="tech">
+            <img src="images/tech/bootstrap.png" class="img-responsive" alt="" />
+            <a href="https://v2.bootcss.com/" target="_blank" class="btn btn-primary" role="button">开始学习</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="tech">
+            <img src="images/tech/nodejs.png" class="img-responsive" alt="" />
+            <a href="http://nodejs.cn/" target="_blank" class="btn btn-primary" role="button">开始学习</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="tech">
+            <img src="images/tech/react.png" class="img-responsive" alt="" />
+            <a href="https://reactjs.bootcss.com/" target="_blank" class="btn btn-primary" role="button">开始学习</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="tech">
+            <img src="images/tech/typescript.png" class="img-responsive" alt="" />
+            <a href="https://typescript.bootcss.com/" target="_blank" class="btn btn-primary" role="button">开始学习</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="tech">
+            <img src="images/tech/webpack.png" class="img-responsive" alt="" />
+            <a href="https://www.webpackjs.com/" target="_blank" class="btn btn-primary" role="button">开始学习</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="tech">
+            <img src="images/tech/vuejs.png" class="img-responsive" alt="" />
+            <a href="https://cn.vuejs.org/" target="_blank" class="btn btn-primary" role="button">开始学习</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="tech">
+            <img src="images/tech/gulpjs.png" class="img-responsive" alt="" />
+            <a href="https://www.gulpjs.com.cn/" target="_blank" class="btn btn-primary" role="button">开始学习
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--tech-->
+
+  <!--chart-->
+  <section id="chart">
+    <div class="container wow fadeInUp">
+      <div class="col-md-6">
+        <h2>chart.js学习</h2>
+        <p>为设计和开发人员准备的简单、灵活的 JavaScript 图表工具</p>
+        <a href="https://chartjs.bootcss.com/docs/" target="_blank" class="btn btn-primary" role="button">
+          入门
+        </a>
+        <a href="https://chartjs.bootcss.com/samples/" target="_blank" class="btn btn-primary" role="button">
+          实例
+        </a>
+      </div>
+      <div class="col-md-6">
+        <div class="chart-image">
+          <img src="images/chart/chart.png" class="img-responsive" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--chart-->
+
+  <!--contact-->
+  <section id="contact">
+    <div class="lj">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 wow fadeInLeft">
+            <h2>
+              <span class="glyphicon glyphicon-send"></span>&nbsp;联系我们
+            </h2>
+            <p>
+              Bootstrap
+              导航栏可以动态定位。默认情况下，它是块级元素，它是基于在 HTML
+              中放置的位置定位的。通过一些帮助器类，您可以把它放置在页面的顶部或者底部，或者您可以让它成为随着页面一起滚动的静态导航栏。
+            </p>
+            <address>
+              <p>
+                <span class="glyphicon glyphicon-home"></span>&nbsp;地址：重庆*******
+              </p>
+              <p>
+                <span class="glyphicon glyphicon-earphone"></span>&nbsp;联系电话：123456678901
+              </p>
+              <p>
+                <span class="glyphicon glyphicon-envelope"></span>&nbsp;邮箱：lj@163.com
+              </p>
+            </address>
+          </div>
+          <div class="col-md-6 wow fadeInRight">
+            <form action="#" class="form" method="post">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="您的姓名" name="name" />
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="您的邮箱" name="email" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" placeholder="标题" name="title" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <textarea name="body" placeholder="您的意见" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8">
+                  <input type="submit" class="form-control" value="提交" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--contact-->
+
+  <!--footer-->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            bootstrap
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--footer-->
+
+  <!-- 先引入jquery -->
+  <!-- <script src="./js/jquery-3.4.1.min.js"></script> -->
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/singlePageNav.js"></script>
+  <script src="./js/wow.min.js"></script>
+  <!-- bootstrap使用wow动画 -->
+  <script>
+    $(function () {
+      //导航跳转插件
+      //  <script src="./js/singlePageNav.js"
+      // 增加了单击后平滑滚动导航和当你浏览不同的部分时自动选择正确的导航项。
+      $(".nav").onePageNav({
+        offset: 70 //偏移量  70为导航栏的高度
+      });
+      //为navbar-collapse 里面的a 添加一个点击事件
+      //小屏幕导航关闭菜单
+      $(".navbar-collapse a").click(function () {
+        $(".navbar-collapse").collapse("hide");
+      });
+      //在布局中为使用对象添加  "wow +animate"
+      new WOW().init();
+
+    });
+  </script>
+</body>
+
+</html>

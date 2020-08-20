@@ -1,0 +1,300 @@
+body {
+    font-family: Arial;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 0 8px 0 rgba(50, 50, 50, .25);
+}
+
+.navbar-default .navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    color: purple;
+    line-height: 35px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 16px;
+    font-weight: bold;
+    height: 70px;
+    /* 行高设置为高度的一半 居中显示 */
+    line-height: 35px;
+    color: #666;
+}
+
+.navbar-toggle {
+    margin-top: 17px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #87ceeb;
+}
+
+.navbar-default .navbar-toggle:hover {
+    border-color: #6bc5e9;
+    background: #6dc6e9;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #2bb3e9
+}
+
+#home {
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+    background: url("../images/home/home-bg1.jpg");
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+}
+
+.lj {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* padding: 90px 0; */
+}
+
+#home h1 {
+    margin-top: 90px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+#home p {
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#home img {
+    margin-top: 40px;
+    display: inline-block;
+    padding: 0 0 80px 0;
+}
+
+#carousel-example-generic {
+    margin-top: 50px;
+}
+
+
+/*bbs*/
+
+#bbs {
+    padding: 80px 0;
+    text-align: center;
+}
+
+#bbs .col-md-4:hover {
+    padding: 20px;
+    background: #f1f1f1;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4)
+    /* <offset-x> 设置水平偏移量，如果是负值则阴影位于元素左边。  */
+    /* <offset-y> 设置垂直偏移量，如果是负值则阴影位于元素上面。 */
+    /* <blur-radius> 值越大，模糊面积越大，阴影就越大越淡 */
+    /* <color> */
+}
+
+#bbs a {
+    color: #0f0f0f;
+    text-decoration: none;
+}
+
+#bbs img {
+    margin: 0 auto;
+    width: 268px;
+    height: 151px;
+}
+
+#bbs h5 {
+    font-weight: bold;
+}
+
+
+/*htm5*/
+
+#html {
+    padding: 0 80px;
+    background: #f8f8f8;
+}
+
+#html h2 {
+    font-weight: bold;
+}
+
+#html p {
+    line-height: 40px;
+}
+
+.icon1 {
+    background: orange;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: wheat;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 20px;
+}
+
+
+/*react*/
+
+#react {
+    padding: 0 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background: #f8f8f8;
+}
+
+#react h2 {
+    font-weight: bold;
+}
+
+#react p {
+    line-height: 40px;
+}
+
+#react .col-md-6 {
+    margin-right: -62px;
+    padding-left: 56px;
+}
+
+.icon2 {
+    background: skyblue;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: wheat;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 20px;
+}
+
+
+/*tech*/
+
+#tech {
+    text-align: center;
+    background: #f8f8f8;
+}
+
+#tech .row {
+    margin-bottom: 40px;
+}
+
+#tech h1 {
+    padding: 40px 0 0 0;
+    font-weight: bold;
+}
+
+.tech {
+    background: white;
+}
+
+#tech .col-md-3 a {
+    margin-top: 16px;
+    background: transparent;
+    border: solid 1px #40D2b1;
+    color: #40D2b1;
+    border-radius: 0px;
+    padding: 8px 40px;
+}
+
+#tech .col-md-3 a:hover {
+    background: #40D2b1;
+    color: white;
+    transition: 0.3s;
+}
+
+
+/*chart*/
+
+#chart {
+    margin-top: 80px;
+    padding: 0 20px;
+}
+
+#chart h2 {
+    font-weight: bold;
+    padding: 20px;
+}
+
+#chart a {
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: solid 1px #FF6384;
+    border-radius: 0;
+    background: #FF6384;
+}
+
+#chart a:hover {
+    background: #f83d65;
+    transition: 0.3s;
+}
+
+#chart .chart-image {
+    padding: 20px;
+}
+
+
+/*contact*/
+
+#contact {
+    background: url("../images/contact/map.png") no-repeat;
+    background-size: cover;
+    color: white;
+    margin-top: 40px;
+}
+
+#contact h2 {
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+/* ‘+’选择器则表示某元素后相邻的兄弟元素，也就是紧挨着的，是单个的。 */
+/* 而‘~’选择器则表示某元素后所有同级的指定元素，强调所有的。 */
+#contact h2+p {
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+#contact form {
+    margin-top: 60px;
+}
+
+#contact input.form-control {
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+#contact textarea.form-control {
+    border: none;
+    border-radius: 0;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+#contact input[type="submit"] {
+    background: plum;
+    color: white;
+}
+
+#contact input[type="submit"]:hover {
+    background: #e45ce4;
+    transition: 0.3s;
+    color: white;
+}
+
+
+/*footer*/
+
+#footer {
+    margin-top: 20px;
+    text-align: center;
+}
